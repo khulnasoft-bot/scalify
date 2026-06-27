@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Stitch",
+  "description": "An AI-first interface design tool with an infinite canvas, secure sandboxed live previews, theme editor, click-to-edit elements, and dynamic code generation via Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

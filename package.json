@@ -1,0 +1,21 @@
+{
+  "name": "design-monorepo",
+  "private": true,
+  "packageManager": "npm@10.8.2",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=stitch-app",
+    "build": "turbo run build --filter=stitch-app",
+    "start": "node packages/app/dist/server.cjs",
+    "test": "turbo run test",
+    "lint": "turbo run lint --filter=stitch-app",
+    "cli": "tsx packages/cli/src/index.ts"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.0",
+    "typescript": "^5.8.2",
+    "tsx": "^4.21.0"
+  }
+}
